@@ -102,7 +102,7 @@ class Bank:
         for x in accountList:
             num += 1
             print("account" + str(num) + ": " + str(x))
-        print("Press T if you would like to transfer funds to another account. Press any key to (q*?)quit")
+        print("Press T if you would like to transfer funds to another account. Press any key to quit")
         transferringFundsOrNot = input()
         if transferringFundsOrNot == "T":
             self.transferFund()
@@ -150,10 +150,6 @@ class Bank:
                 self.default_case()
 
 def passwordCreation():
-
-
-
-
     while True:
         print("Please create a password")
         print()
@@ -239,7 +235,7 @@ while True:
         print("your balance is" + " " + str(formatted_balance))
         theAccount = account
         while True:
-         choice = int(input("Enter your choice:\n press 1 to deposit or withdraw \n press 2 to see your balance \n press 3 to see transaction history \n press 4 to see your accounts \n press 5 to quit"))
+         choice = int(input("Enter your choice:\n press 1 to deposit or withdraw \n press 2 to see your balance \n press 3 to see transaction history \n press 4 to see your accounts and transfer funds \n press 5 to quit"))
          if choice == 5:
            break
          account.switch(choice)
@@ -267,5 +263,6 @@ while True:
      break
     else:
        pass
+
 
 
